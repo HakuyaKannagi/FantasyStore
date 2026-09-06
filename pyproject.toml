@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fantasy-store"
+version = "0.1.0"
+description = "利用者向け架空ECシステム MVP (through Phase 7 integration/build candidate)"
+requires-python = ">=3.11"
+dependencies = [
+  "Pillow==12.3.0",
+  "jsonschema==4.26.0",
+  "pywebview==6.2.1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

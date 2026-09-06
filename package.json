@@ -1,0 +1,8 @@
+{
+  "name": "fantasy-store-phase6-ui-tests",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:ui": "node --test tests/js/*.test.mjs"
+  }
+}

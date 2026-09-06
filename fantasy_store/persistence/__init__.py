@@ -1,0 +1,1 @@
+"""FantasyStore persistence package."""

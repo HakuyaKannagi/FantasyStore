@@ -1,0 +1,29 @@
+from __future__ import annotations
+
+from enum import StrEnum
+
+
+class CatalogState(StrEnum):
+    READY = "READY"
+    NO_PACKS = "NO_PACKS"
+    ALL_PACKS_DISABLED = "ALL_PACKS_DISABLED"
+    NO_SEARCH_RESULTS = "NO_SEARCH_RESULTS"
+
+
+class PackState(StrEnum):
+    READY = "READY"
+    NO_PACKS = "NO_PACKS"
+    ALL_PACKS_DISABLED = "ALL_PACKS_DISABLED"
+
+
+class PackJournalState(StrEnum):
+    STAGING = "STAGING"
+    VALIDATING = "VALIDATING"
+    VALIDATED = "VALIDATED"
+    READY_TO_SWITCH = "READY_TO_SWITCH"
+    OLD_BACKED_UP = "OLD_BACKED_UP"
+    FILES_SWITCHED = "FILES_SWITCHED"
+    DB_SWITCHED = "DB_SWITCHED"
+    COMPLETED = "COMPLETED"
+    ROLLING_BACK = "ROLLING_BACK"
+    RECOVERY_REQUIRED = "RECOVERY_REQUIRED"
