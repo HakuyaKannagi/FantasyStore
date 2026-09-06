@@ -119,7 +119,16 @@ resources/schema/pack-v1.json
 resources/schema/items-v1.json
 ```
 
-`.vpack` の正式な公開仕様書は別途整備予定です。
+`.vpack` は **Portable Product Pack Format** として仕様を公開しています。
+
+正式仕様:
+
+[`docs/vpack_Specification_v1.0.md`](docs/vpack_Specification_v1.0.md)
+
+`.vpack Specification v1.0` は、FantasyStore本体の内部実装から独立したPack Formatを定義しています。  
+Packを自作する場合や、独自のProducer / Consumerを実装する場合は、このSpecificationを参照してください。
+
+Specification本文がv1 FormatのNormative Authorityであり、JSON SchemaやFantasyStoreのValidatorはその検証・実装用artifactです。
 
 ### Pack Version
 
@@ -379,6 +388,10 @@ FantasyStoreのSource codeは **MIT License** で公開しています。
 
 ## Repository
 
-このRepositoryはFantasyStore本体のSource codeを公開するものです。
+このRepositoryはFantasyStore本体のSource codeと、公開Pack Formatである
+**`.vpack Specification v1.0`** を公開しています。
 
-`.vpack` の正式仕様や関連ツールは、それぞれの準備が整い次第、別途案内します。
+- FantasyStore Source code — MIT License
+- `.vpack Specification v1.0` — [`docs/vpack_Specification_v1.0.md`](docs/vpack_Specification_v1.0.md)
+
+`.vpack` 作成支援などの関連ツールは、FantasyStore本体および公開Formatとは別に扱います。
